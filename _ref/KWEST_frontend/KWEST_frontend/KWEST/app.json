@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "KWEST",
+    "slug": "kwest",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "backgroundColor": "#000000",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Used to attach proof photos for quest completion.",
+        "NSCameraUsageDescription": "Used to take proof photos for quest completion."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#000000"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "KWEST needs photo access to attach quest proof.",
+          "cameraPermission": "KWEST needs camera access to capture quest proof."
+        }
+      ]
+    ]
+  }
+}
